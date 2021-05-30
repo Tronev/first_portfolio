@@ -12,3 +12,11 @@ close.addEventListener('click', () => {
     menu.classList.remove('active')
     hamburger.classList.remove('hamburger__hidden')
 });
+
+
+const skillsProgressPct = document.querySelectorAll('.skills__progress-pct'),
+      skillsProgressPercent = document.querySelectorAll('.skills__progress-percent')
+
+skillsProgressPct.forEach( (item, i) => {
+    skillsProgressPercent[i].style.width = item.innerHTML
+})
